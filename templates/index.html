@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction - Input Data</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Prediction</h1>
+        <form id="prediction-form" action="/predict" method="post">
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="number" class="form-control" name="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="Sex">Sex:</label>
+                <input type="number" class="form-control" name="Sex" required>
+            </div>
+            <div class="form-group">
+                <label for="Steroid">Steroid:</label>
+                <input type="number" class="form-control" name="Steroid" required>
+            </div>
+            <div class="form-group">
+                <label for="Antivirals">Antivirals:</label>
+                <input type="number" class="form-control" name="Antivirals" required>
+            </div>
+            <div class="form-group">
+                <label for="Fatigue">Fatigue:</label>
+                <input type="number" class="form-control" name="Fatigue" required>
+            </div>
+            <div class="form-group">
+                <label for="Malaise">Malaise:</label>
+                <input type="number" class="form-control" name="Malaise" required>
+            </div>
+            <div class="form-group">
+                <label for="Anorexia">Anorexia:</label>
+                <input type="number" class="form-control" name="Anorexia" required>
+            </div>
+            <div class="form-group">
+                <label for="Liver_Big">Liver Big:</label>
+                <input type="number" class="form-control" name="Liver_Big" required>
+            </div>
+            <div class="form-group">
+                <label for="Liver_Firm">Liver Firm:</label>
+                <input type="number" class="form-control" name="Liver_Firm" required>
+            </div>
+            <div class="form-group">
+                <label for="Spleen_Palpable">Spleen Palpable:</label>
+                <input type="number" class="form-control" name="Spleen_Palpable" required>
+            </div>
+            <div class="form-group">
+                <label for="Spiders">Spiders:</label>
+                <input type="number" class="form-control" name="Spiders" required>
+            </div>
+            <div class="form-group">
+                <label for="Ascites">Ascites:</label>
+                <input type="number" class="form-control" name="Ascites" required>
+            </div>
+            <div class="form-group">
+                <label for="Varices">Varices:</label>
+                <input type="number" class="form-control" name="Varices" required>
+            </div>
+            <div class="form-group">
+                <label for="Bilirubin">Bilirubin:</label>
+                <input type="number" class="form-control" name="Bilirubin" required>
+            </div>
+            <div class="form-group">
+                <label for="Alk_Phosphate">Alk Phosphate:</label>
+                <input type="number" class="form-control" name="Alk_Phosphate" required>
+            </div>
+            <div class="form-group">
+                <label for="Sgot">Sgot:</label>
+                <input type="number" class="form-control" name="Sgot" required>
+            </div>
+            <div class="form-group">
+                <label for="Albumin">Albumin:</label>
+                <input type="number" class="form-control" name="Albumin" required>
+            </div>
+            <div class="form-group">
+                <label for="Protime">Protime:</label>
+                <input type="number" class="form-control" name="Protime" required>
+            </div>
+            <div class="form-group">
+                <label for="Histology">Histology:</label>
+                <input type="number" class="form-control" name="Histology" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
